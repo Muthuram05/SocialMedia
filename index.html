@@ -4,41 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>camera</title>
-    <link href="style.css" rel="stylesheet">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="icon/camera.png">
+    
 </head>
 <body>
     <nav>
-        <div class="nav-left">
+        <div class="left-content">
             <img src="image/images.png" class="logo">
-            <ul>
-                <li><img src="icon/home.png"></li>
-                <li><img src="icon/notification (1).png"></li>
-                <li><img src="icon/call.png"></li>
+            <img src="icon/camera.png" class="MobileLogo">
 
-            </ul>
         </div>
-        <div class="nav-right">
+        <div class="right-content">
             <div class="searchbox ">
                 <img src="icon/search.png">
                 <input type="text" placeholder="search" >
+            </div>
+            <div class="MobileLogo">
+                <a href="search.html"> <img src="icon/search.png"></a>
             </div>
             <div class="nav-user-icon online">
                 <img src="icon/profile.png">
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="left-sidebar">
-
+    <div class="DesktopBody">
+        <div class="Notification">
+            <h1 style="text-align: center;">Notification</h1>
+            <div class="NotificationBar">
+                <b>Angel joined social media!</b>
+            </div>
+            <div class="NotificationBar">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, debitis quibusdam molestias.</p>
+            </div>
         </div>
-        <div class="main-content">
-
+        <div  class="Home">
+            <br>
+            <div class="FullBox">
+                <div class="UserDetails">
+                    <div style="display: flex;">
+                    <img src="icon/profile.png">
+                    <div class="name">
+                        <p><a href="#">Lorem</a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum error incidunt fuga aspernatur aperiam distinctio, </p>
+                    </div>
+                    <div class="menu">
+                        <img src="icon/icons8-menu-30.png">
+                    </div>
+                    </div>
+                    <div class="UserTime">
+                        <p style="padding-left: 35px;">2009-12-6  Tirunelveli </p>
+                    </div>
+                </div>
+                <div class="TitleBox">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
+                    <a href="#">#sunglass</a><br>
+                    <a href="#">#ram</a>
+                </div>
+                <div class="image">
+                    <p align="center"><img src="image/b&w.jpg"></p>
+                </div>
+                <br>
+                <div class="count" style="display: flex; justify-content: space-between;">
+                    <div class="LikeCount">
+                        <p style="padding-left:4px;">3M like+</p>
+                    </div>
+                    <div class="CommentCount">
+                        <p style="padding-right:4px;">1M comment</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="Bar" style="display: flex; margin: auto;">
+                    <div class="like">
+                        <p align="center"><img src="icon/like.png"></p>
+                    </div>
+                    <div class="comment">
+                        <p align="center"><img src="icon/comment.png" style="width: 24px; height: 24px;"></p>
+                    </div>
+                    <div class="share">
+                        <p align="center"><img src="icon/icons8-share-24.png" style="width: 24px; height: 24px;"></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="right-sidebar">
-
+        <div class="Message">
+            <h1>MESSAGE</h1>
+            <div style="display: flex;">
+                <img src="icon/profile.png">
+                <div class="name">
+                    <p>Lorem ipsum</p>
+                    <h5>Hii bro</h5>
+                </div>
+            </div>
+            
         </div>
-
+    <div class="MobileIcons">
+        <button onclick="openBar('Home')"> <img src="icon/home.png" ></button>
+        <button onclick="openBar('Message')"><img src="icon/icons8-message-64.png" ></button>
+        <button onclick="openBar('Notification')"><img src="icon/notification (1).png"> </button>   
     </div>
+    <div class="MobileBody">
+        <div id="Home" class="TabView">
+            <h1>HOME</h1>
+        </div>
+        <div id="Message" class="TabView" style="display: none;">
+            <h1>MESSAGE</h1>
+        </div>
+        <div id="Notification" class="TabView" style="display: none;">
+            <h1>NOTIFICATION</h1>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
